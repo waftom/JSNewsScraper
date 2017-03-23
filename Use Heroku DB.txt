@@ -1,0 +1,17 @@
+In order to deploy your project to Heroku, you must set up an mLab provision. mLab is remote MongoDB database that Heroku supports natively. Follow these steps to get it running:
+
+Create a Heroku app in your project directory.
+
+Run this command in your Terminal/Bash window:
+
+heroku addons:create mongolab
+This command will add the free mLab provision to your project.
+You'll need to find the URI string that connects Mongoose to mLab. Run this command to grab that string:
+
+heroku config | grep MONGODB_URI
+Notice the value that appears after MONGODB_URI =>. This is your URI string. Copy it to a document for safekeeping.
+When you’re ready to connect Mongoose with your remote database, simply paste the URI string as the lone argument of your mongoose.connect() function. That’s it!
+
+Watch this demo of a possible submission.
+
+Your site doesn't need to match the demo's style, but feel free to attempt something similar if you'd like. Otherwise, just be creative!

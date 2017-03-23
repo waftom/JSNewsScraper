@@ -1,0 +1,20 @@
+{
+  "name": "game_news_scrapper",
+  "version": "1.0.0",
+  "description": "Game News Scrapper",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "waftom",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.17.1",
+    "cheerio": "^0.22.0",
+    "express": "^4.15.2",
+    "express-handlebars": "^3.0.0",
+    "mongoose": "^4.9.1",
+    "morgan": "^1.8.1",
+    "request": "^2.81.0"
+  }
+}
